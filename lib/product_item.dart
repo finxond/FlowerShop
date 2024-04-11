@@ -1,9 +1,8 @@
-// product_item.dart
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled55412/cart.dart';
 
-import 'BuyNowButton.dart';
+import 'buy_now_button.dart';
 import 'product.dart';
 
 class ProductItem extends StatelessWidget {
@@ -25,7 +24,7 @@ class ProductItem extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Image.network(
-                  product.images[index] as String,
+                  product.images[index].toString(),
                   height: 200,
                   width: double.infinity,
                   fit: BoxFit.cover,

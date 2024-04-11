@@ -1,5 +1,3 @@
-// product.dart
-
 import 'package:flutter/material.dart';
 
 class Product {
@@ -10,7 +8,8 @@ class Product {
   final List<String> characteristics;
   final List<String> reviews;
   late double rating;
-
+@override
+  String toString();
   Product(
     this.name,
     this.images,

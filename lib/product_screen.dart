@@ -1,10 +1,8 @@
-// product_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:untitled55412/product.dart';
-
-import '../product_item.dart';
-import '../product_details_screen.dart';
+import 'registration.dart';
+import 'package:untitled55412/product_item.dart';
+import 'product_detail_screen.dart';
 import 'cart.dart';
 
 
@@ -92,8 +90,25 @@ class _ProductScreenState extends State<ProductScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flower Shop'),
+        actions: [
+        Align(
+            alignment: const Alignment(0.6,0.0),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                 MaterialPageRoute(builder: (context) => const FirstScreen()),
+                );
+              },
+              child: const Text('Авторизоваться'),
+            )
+          )
+        ],
       ),
-      body: GridView.builder(
+      body: 
+      GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 10.0,
