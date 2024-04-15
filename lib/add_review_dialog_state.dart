@@ -8,7 +8,9 @@ class AddReviewDialog extends StatefulWidget {
   const AddReviewDialog({Key? key, required this.product}) : super(key: key);
 
   @override
-  _AddReviewDialogState createState() => _AddReviewDialogState();
+  _AddReviewDialogState createState() {
+    return _AddReviewDialogState();
+  }
 }
 
 class _AddReviewDialogState extends State<AddReviewDialog> {
@@ -65,3 +67,4 @@ class _AddReviewDialogState extends State<AddReviewDialog> {
     );
   }
 }
+
